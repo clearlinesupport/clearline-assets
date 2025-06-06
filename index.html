@@ -18,10 +18,12 @@
                 <meta name="twitter:title" content="Clearline Field Systems" />
                 <meta name="twitter:description" content="Clearline Field Systems delivers fast, on-site IT support, PC deployments, and tech refresh services to Albany-area government offices and small businesses. SAM.gov registered." />
 		<meta name="description" content="Fast, transparent on-site IT support and PC refreshes in Albany, NY. SAM.gov registered. Serving government and small business clients." />
-		<link href="https://fonts.googleapis.com/css2?display=swap&family=Inter:ital,wght@0,300;0,400;1,300;1,400" rel="stylesheet" type="text/css" />
+                <link rel="preload" href="https://fonts.googleapis.com/css2?display=optional&family=Inter:ital,wght@0,300;0,400;1,300;1,400" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+                <noscript><link href="https://fonts.googleapis.com/css2?display=optional&family=Inter:ital,wght@0,300;0,400;1,300;1,400" rel="stylesheet"></noscript>
 		<link rel="icon" type="image/png" href="favicon.png" />
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-		<link rel="stylesheet" href="main.css" />
+                <link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+                <noscript><link rel="stylesheet" href="main.css"></noscript>
 		<script async src="//www.googletagmanager.com/gtag/js?id=G-R1PHT8M2JS"></script>
 		<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-R1PHT8M2JS', { 'send_page_view': false });</script>
 		<!-- qweoqwupeoiqwuewqe --><!-- ================================
@@ -55,13 +57,9 @@
 										<header class="full-bleed">
 										<div class="header-inner">
 										<!-- Logo -->
-										<a href="#home" style="display: flex; align-items: center; padding-left: 1rem;">
-										<img
-										src="clearline_forced_fca501.svg"
-										alt="Clearline Logo"
-										style="height: 48px; max-width: 100%; display: block; object-fit: contain;"
-										>
-										</a>
+                <a href="#home" class="logo">
+                    <img src="logo_black.svg" alt="Clearline Logo" width="120" height="48" style="max-width: 100%; display: block; object-fit: contain;" />
+                </a>
 										
 										<!-- Toggle -->
                 <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu" aria-controls="main-nav" aria-expanded="false" />
@@ -116,6 +114,7 @@
 										color: var(--clr-text);
 										font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 										scroll-padding-top: var(--header-h);
+                                                                               padding-top: var(--header-h);
 										}
 										
 										header.full-bleed {
@@ -128,7 +127,7 @@
 										z-index: 1000;
 										}
 										
-										.header-inner {
+.header-inner {
 										max-width: 1200px;
 										margin: 0 auto;
 										display: flex;
@@ -138,7 +137,14 @@
 										min-height: var(--header-h);
 										position: relative;
 										flex-wrap: wrap;
-										}
+}
+
+.header-inner .logo {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    height: var(--header-h);
+}
 										
 										.header-inner img {
 										height: 48px;
