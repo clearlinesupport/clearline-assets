@@ -64,14 +64,10 @@
 										</a>
 										
 										<!-- Toggle -->
-										<input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu" />
-										<label for="menu-toggle"
-										class="hamburger"
-										aria-label="Toggle navigation menu"
-										aria-controls="main-nav"
-										aria-expanded="false">
-										<span></span><span></span><span></span>
-										</label>
+                <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu" aria-controls="main-nav" aria-expanded="false" />
+                <label for="menu-toggle" class="hamburger">
+                <span></span><span></span><span></span>
+                </label>
 										
 										<!-- Nav inside header -->
 										<nav id="main-nav">
@@ -88,12 +84,11 @@
 										<!-- ✅ JS: Toggle + Accessibility -->
 										<script>
 										const toggle = document.getElementById('menu-toggle');
-										const label = document.querySelector('label[for="menu-toggle"]');
 										const nav = document.getElementById('main-nav');
 										
 										toggle.addEventListener('change', () => {
 										nav.style.display = toggle.checked ? 'flex' : '';
-										label.setAttribute('aria-expanded', toggle.checked ? 'true' : 'false');
+										toggle.setAttribute('aria-expanded', toggle.checked ? 'true' : 'false');
 										});
 										
 										document.querySelectorAll('#main-nav a').forEach(link =>
@@ -101,7 +96,7 @@
 										if (toggle && toggle.checked) {
 										toggle.checked = false;
 										nav.style.display = '';
-										label.setAttribute('aria-expanded', 'false');
+										toggle.setAttribute('aria-expanded', 'false');
 										}
 										})
 										);
@@ -113,7 +108,7 @@
 										--header-h: 100px;
 										--clr-bg: #0f1115;
 										--clr-text: #ffffff;
-										--clr-accent-global: #0069d9;
+										--clr-accent-global: #3399ff;
 										}
 										
 										body {
@@ -362,7 +357,7 @@
 										================================== -->
 										<div class="page-header" data-about>
 										
-										<h1>About Clearline</h1>
+										<h2>About Clearline</h2>
 										<p>I'm Andre, the tech behind the work and this site. Clearline exists to get things fixed, installed, or cleaned up without the red tape.</p>
 										</div>
 										
@@ -372,10 +367,10 @@
 										<p>Everything’s flat-rate, insured, and documented. If something’s out of spec or left behind, I’ll sort it. If it needs to be installed right, I’ll do that too — and leave you with photos or a log if it helps.</p>
 										
 										<ul style="list-style: none; padding-left: 0;">
-										<li style="margin-bottom: 0.75rem;"><span style="color: #007bff; font-weight: bold;">✔ Mission Aligned</span> – I support work that matters: city offices, clinics, nonprofits, housing agencies</li>
-										<li style="margin-bottom: 0.75rem;"><span style="color: #007bff; font-weight: bold;">✔ Experienced</span> – Every service on this site is something I’ve done, not something I outsourced</li>
-										<li style="margin-bottom: 0.75rem;"><span style="color: #007bff; font-weight: bold;">✔ Process First</span> – Clean work, clear notes, no hidden gaps. You know what got done and what’s next</li>
-										<li style="margin-bottom: 0.75rem;"><span style="color: #007bff; font-weight: bold;">✔ Paperwork in Hand</span> – W9, COI, UEI, quotes — all set up so you can file and move on</li>
+										<li style="margin-bottom: 0.75rem;"><span style="color: #3399ff; font-weight: bold;">✔ Mission Aligned</span> – I support work that matters: city offices, clinics, nonprofits, housing agencies</li>
+										<li style="margin-bottom: 0.75rem;"><span style="color: #3399ff; font-weight: bold;">✔ Experienced</span> – Every service on this site is something I’ve done, not something I outsourced</li>
+										<li style="margin-bottom: 0.75rem;"><span style="color: #3399ff; font-weight: bold;">✔ Process First</span> – Clean work, clear notes, no hidden gaps. You know what got done and what’s next</li>
+										<li style="margin-bottom: 0.75rem;"><span style="color: #3399ff; font-weight: bold;">✔ Paperwork in Hand</span> – W9, COI, UEI, quotes — all set up so you can file and move on</li>
 										</ul>
 										
 										<p style="margin-top: 1.5rem;">This isn’t managed services. It’s just real-world tech support — wired in, shown up, and handled right the first time. That's what I do.</p>
@@ -414,7 +409,7 @@
 										--clr-bg: #0f1115;
 										--clr-surface: #1a1c1f;
 										--clr-card: #202225;
-										--clr-accent: #007bff;
+										--clr-accent: #3399ff;
 										--clr-text: #ffffff;
 										--clr-subtle: #a5abb5;
 										--clr-badge: #2b78e4;
@@ -474,14 +469,14 @@
 										font-size: 1em;
 										text-decoration: none;
 										color: white;
-										background-color: #007bff;
+										background-color: #3399ff;
 										border-radius: 5px;
 										font-weight: bold;
 										transition: all 0.2s ease-in-out;
 										}
 										.cta-btn:hover {
 										transform: scale(1.05);
-										background: linear-gradient(135deg, #1e90ff, #007bff);
+										background: linear-gradient(135deg, #66b3ff, #3399ff);
 										}
 										
 										.services-grid {
@@ -549,7 +544,7 @@
 										</style>
 										
 										<div class="page-header" style="margin-top: 64px;">
-										<h1>Field-Ready IT. No Retainers. No Nonsense.</h1>
+										<h2>Field-Ready IT. No Retainers. No Nonsense.</h2>
 										<p>We do physical tech work for offices and agencies across Albany and Rensselaer County—wiring, cleanups, smart installs, and all the stuff your MSP doesn't want to touch.</p>
 										</div>
 										
@@ -652,10 +647,9 @@
 										}
 										</style>
 										
-										<h1 style="font-size: 2em; color: var(--clr-text); text-align: center; margin-top: 0px; margin-bottom: 1.2rem;">
+										<h2 style="font-size: 2em; color: var(--clr-text); text-align: center; margin-top: 0px; margin-bottom: 1.2rem;">
 										<strong>Vendor Documents</strong>
-										</h1>
-										</h1>
+										</h2>
 										<p style="font-size: 1.05em; color: var(--clr-subtle); text-align: center; margin-bottom: 1.5rem;">
 										Access our vendor-ready forms and compliance documentation.
 										</p>
@@ -684,7 +678,7 @@
 										
 										.doc-btn:hover {
 										transform: scale(1.04);
-										background: linear-gradient(135deg, #1e90ff, #007bff);
+										background: linear-gradient(135deg, #66b3ff, #3399ff);
 										}
 										
 										.doc-btn.yellow {
@@ -693,7 +687,7 @@
 										}
 										
 										.doc-btn.yellow:hover {
-										background: linear-gradient(135deg, #feca57, #f6b93b);
+										background: linear-gradient(135deg, #ffd77a, #fcd06c);
 										transform: scale(1.04);
 										}
 										
@@ -702,7 +696,7 @@
 										}
 										
 										.doc-btn.green:hover {
-										background: linear-gradient(135deg, #1dd1a1, #10ac84);
+										background: linear-gradient(135deg, #48e2b9, #3ec89c);
 										transform: scale(1.04);
 										}
 										</style><!-- mnbnbxmbzxmncbzxc -->
