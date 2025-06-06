@@ -72,7 +72,7 @@ index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86
 -										>
 -										</a>
 +                <a href="#home" class="logo">
-+                    <img src="logo_black.png" alt="Clearline Logo" width="120" height="48" style="max-width: 100%; display: block; object-fit: contain;" />
++                    <img src="Logo_Black.png" alt="Clearline Logo" width="120" height="48" style="max-width: 100%; display: block; object-fit: contain;" />
 +                </a>
  										
  										<!-- Toggle -->
@@ -168,6 +168,11 @@ index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86
  										object-fit: contain;
  										display: block;
  										}
+.hamburger,
+#menu-toggle {
+    display: none;
+}
+
  										
  										nav {
  										display: flex;
@@ -185,6 +190,32 @@ index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86
  										nav a:hover {
  										color: var(--clr-accent-global);
  										}
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        height: var(--header-h);
+    }
+    .hamburger span {
+        width: 32px;
+        height: 4px;
+        background: var(--clr-text);
+    }
+    #menu-toggle {
+        display: block;
+        opacity: 0;
+        width: 56px;
+        height: var(--header-h);
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1010;
+    }
+}
+
  										
  										.cta-button {
 diff --git a/index.html b/index.html
@@ -218,7 +249,7 @@ index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86
  										
  										/* Lock logo height */
 -										img[src*="clearline_forced"] {
-+										img[src*="logo_black"] {
++										img[src*="Logo_Black"] {
  										width: 120px;
  										height: auto;
  										display: block;
