@@ -434,8 +434,7 @@ If you (or any AI agent) need clarifications on this Agents.md file or any proje
 
 * **Andre Smith**
 
-  * Email: [andre@clearlinesupport.com](mailto:andre@clearlinesupport.com)
-  * Phone/SMS: (518) XXX-XXXX
+  * Email: [admin@clearlinesupport.com](mailto:admin@clearlinesupport.com)
 
 For faster responses regarding AI‐generated code, label GitHub issues with `agent-review` and assign to Andre.
 
