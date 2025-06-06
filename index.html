@@ -1,9 +1,4 @@
-diff --git a/index.html b/index.html
-index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86fa00a461 100644
---- a/index.html
-+++ b/index.html
-@@ -1,89 +1,87 @@
- <!DOCTYPE HTML>
+<!DOCTYPE HTML>
  <html lang="en">
  	<head>
  		<title>Clearline Field Systems</title>
@@ -23,17 +18,15 @@ index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86
                  <meta name="twitter:title" content="Clearline Field Systems" />
                  <meta name="twitter:description" content="Clearline Field Systems delivers fast, on-site IT support, PC deployments, and tech refresh services to Albany-area government offices and small businesses. SAM.gov registered." />
  		<meta name="description" content="Fast, transparent on-site IT support and PC refreshes in Albany, NY. SAM.gov registered. Serving government and small business clients." />
--		<link href="https://fonts.googleapis.com/css2?display=swap&family=Inter:ital,wght@0,300;0,400;1,300;1,400" rel="stylesheet" type="text/css" />
-+                <link rel="preload" href="https://fonts.googleapis.com/css2?display=optional&family=Inter:ital,wght@0,300;0,400;1,300;1,400" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-+                <noscript><link href="https://fonts.googleapis.com/css2?display=optional&family=Inter:ital,wght@0,300;0,400;1,300;1,400" rel="stylesheet"></noscript>
+                <link rel="preload" href="https://fonts.googleapis.com/css2?display=optional&family=Inter:ital,wght@0,300;0,400;1,300;1,400" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+                <noscript><link href="https://fonts.googleapis.com/css2?display=optional&family=Inter:ital,wght@0,300;0,400;1,300;1,400" rel="stylesheet"></noscript>
  		<link rel="icon" type="image/png" href="favicon.png" />
  		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
--		<link rel="stylesheet" href="main.css" />
-+                <link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-+                <noscript><link rel="stylesheet" href="main.css"></noscript>
+                <link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+                <noscript><link rel="stylesheet" href="main.css"></noscript>
  		<script async src="//www.googletagmanager.com/gtag/js?id=G-R1PHT8M2JS"></script>
  		<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-R1PHT8M2JS', { 'send_page_view': false });</script>
- 		<!-- qweoqwupeoiqwuewqe --><!-- ================================
+ 		<!-- ================================
  		Script 0: Performance & Fonts (Optimized for Speed)
  		================================ -->
  		
@@ -58,22 +51,15 @@ index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86
  							<div class="wrapper">
  								<div class="inner">
  									<div id="embed01">
- 										<!-- qweoqwupeoiqwuewqe --><!-- ================================
+ 										<!-- ================================
  										HEADER BLOCK (Mobile Tweaks Added)
  										===================================== -->
  										<header class="full-bleed">
  										<div class="header-inner">
  										<!-- Logo -->
--										<a href="#home" style="display: flex; align-items: center; padding-left: 1rem;">
--										<img
--										src="clearline_forced_fca501.svg"
--										alt="Clearline Logo"
--										style="height: 48px; max-width: 100%; display: block; object-fit: contain;"
--										>
--										</a>
-+                <a href="#home" class="logo">
-+                    <img src="logo_black.png" alt="Clearline Logo" width="120" height="48" style="max-width: 100%; display: block; object-fit: contain;" />
-+                </a>
+                <a href="#home" class="logo">
+                    <img src="logo_black.png" alt="Clearline Logo" width="120" height="48" style="max-width: 100%; display: block; object-fit: contain;" />
+                </a>
  										
  										<!-- Toggle -->
                  <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu" aria-controls="main-nav" aria-expanded="false" />
@@ -99,11 +85,6 @@ index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86
  										const nav = document.getElementById('main-nav');
  										
  										toggle.addEventListener('change', () => {
-diff --git a/index.html b/index.html
-index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86fa00a461 100644
---- a/index.html
-+++ b/index.html
-@@ -94,73 +92,81 @@
  										document.querySelectorAll('#main-nav a').forEach(link =>
  										link.addEventListener('click', () => {
  										if (toggle && toggle.checked) {
@@ -129,7 +110,7 @@ index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86
  										color: var(--clr-text);
  										font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
  										scroll-padding-top: var(--header-h);
-+                                                                               padding-top: var(--header-h);
+                                                                               padding-top: var(--header-h);
  										}
  										
  										header.full-bleed {
@@ -142,8 +123,7 @@ index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86
  										z-index: 1000;
  										}
  										
--										.header-inner {
-+.header-inner {
+.header-inner {
  										max-width: 1200px;
  										margin: 0 auto;
  										display: flex;
@@ -153,15 +133,14 @@ index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86
  										min-height: var(--header-h);
  										position: relative;
  										flex-wrap: wrap;
--										}
-+}
-+
-+.header-inner .logo {
-+    display: flex;
-+    align-items: center;
-+    padding-left: 1rem;
-+    height: var(--header-h);
-+}
+}
+
+.header-inner .logo {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    height: var(--header-h);
+}
  										
  										.header-inner img {
  										height: 48px;
@@ -187,12 +166,7 @@ index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86
  										}
  										
  										.cta-button {
-diff --git a/index.html b/index.html
-index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86fa00a461 100644
---- a/index.html
-+++ b/index.html
-@@ -741,51 +747,51 @@
- 										<!-- qweoqwupeoiqwuewqe --><footer>
+ 										<footer>
  										<div style="font-size: 0.9em; color: #FFFFFF9E; text-align: center;" role="contentinfo">
  										<p><strong>Clearline Field Systems LLC</strong></p>
  										<p>UEI: P53GQNQ41C74</p>
@@ -217,8 +191,7 @@ index ceadfc993ed4796a204c7fa6b08d554b478c5181..7fe7c895747972fdb8080290cc4f0e86
  										}
  										
  										/* Lock logo height */
--										img[src*="clearline_forced"] {
-+										img[src*="logo_black"] {
+										img[src*="logo_black"] {
  										width: 120px;
  										height: auto;
  										display: block;
