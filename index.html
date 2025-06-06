@@ -58,7 +58,7 @@
 										<div class="header-inner">
 										<!-- Logo -->
 										<a href="#home" style="display: flex; align-items: center; padding-left: 1rem;">
-                                                                               <img src="clearline_forced_fca501.svg" alt="Clearline Logo" width="120" height="48" style="max-width: 100%; display: block; object-fit: contain;" />
+<img src="clearline_forced_fca501.svg" alt="Clearline Logo" width="100" height="40" style="max-width: 100%; display: block; object-fit: contain;" />
 										</a>
 										
 										<!-- Toggle -->
@@ -103,7 +103,7 @@
 										<!-- ✅ CSS: Compact + Mobile-Responsive + Visual Fixes -->
 										<style>
 										:root {
-										--header-h: 100px;
+                                                                       --header-h: 96px;
 										--clr-bg: #0f1115;
 										--clr-text: #ffffff;
 										--clr-accent-global: #3399ff;
@@ -139,8 +139,8 @@
 										flex-wrap: wrap;
 										}
 										
-										.header-inner img {
-										height: 48px;
+.header-inner img {
+                                                                       height: 40px;
 										object-fit: contain;
 										display: block;
 										}
@@ -175,9 +175,9 @@
 										display: none;
 										}
 										
-										@media (max-width: 768px) {
-										.header-inner img {
-										height: 64px;
+@media (max-width: 768px) {
+                                                                       .header-inner img {
+                                                                       height: 48px;
 										}
 										
 										.hamburger {
@@ -330,14 +330,14 @@
 										}
 										}
 										.hero-spacer {
-										height: 120px;
+                                                                       height: calc(var(--header-h) * 1.2);
 										display: block;
 										content: '';
 										}
 										
 										@media (max-width: 480px) {
 										.hero-spacer {
-										height: 80px;
+                                                                       height: calc(var(--header-h) * 0.8);
 										}
 										}
 										</style>
@@ -763,7 +763,7 @@
 										
 										/* Lock logo height */
 										img[src*="clearline_forced"] {
-										width: 120px;
+                                                                       width: 100px;
 										height: auto;
 										display: block;
 										}
