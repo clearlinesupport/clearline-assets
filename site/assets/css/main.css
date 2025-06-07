@@ -199,14 +199,19 @@ a {
 
 /* CTA BUTTON IN HERO */
 .cta-btn {
-  display: inline-block;
-  padding: 0.75em 1.5em;
-  background-color: var(--clr-primary);
-  color: var(--clr-text);
-  font-size: 1.05rem;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: filter 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: var(--clr-primary);
+    color: var(--clr-text);
+    font-size: 1.05rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: filter 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn.secondary {
+    background-color: var(--clr-subtle);
+    color: var(--clr-primary);
 }
 
 .cta-btn:hover {
@@ -464,4 +469,42 @@ a {
   .doc-btn {
     max-width: 90%;
   }
+}
+
+/* QUOTE PAGE */
+.quote__form {
+    background: var(--clr-surface);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.quote__form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.quote__form select,
+.quote__form input[type="number"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.quote__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.quote__table th,
+.quote__table td {
+    border: 1px solid var(--border-color);
+    padding: 8px;
+}
+
+.quote__table th {
+    background: var(--secondary-color);
 }
