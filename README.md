@@ -134,7 +134,7 @@ To view or modify this site locally, you need:
    cd clearline-assets
    ```
 
-2. **Verify file structure**. Inside the `site/` folder you should see `index.html`, `assets/css/main.css`, `assets/js/main.js`, and an `assets/` directory with images such as the logo and favicon.
+2. **Verify file structure**. Inside the `site/` folder you should see `index.html`, the source assets under `assets/css` and `assets/js`, and an `assets/` directory with images such as the logo and favicon. Versioned files (e.g. `main.<hash>.css`) will be created during the build step.
 
 ### Local Development
 
@@ -147,7 +147,7 @@ You can open `index.html` directly in your browser, but for correct relative-pat
   live-server
   ```
 
-  This opens `index.html` at `http://127.0.0.1:8080` (or similar). Any edits to `index.html`, `assets/css/main.css`, or `assets/js/main.js` will auto-reload the page.
+  This opens `index.html` at `http://127.0.0.1:8080` (or similar). After editing CSS or JavaScript files, run `npm run build` to regenerate the versioned assets referenced by the HTML.
 
 * **Using Python 3’s built-in server** (no installation needed if Python 3 is installed):
 
@@ -163,7 +163,8 @@ You can deploy to any static-site hosting service. The simplest is GitHub Pages:
 
 1. **Push** your code to a GitHub repository named `<your-username>.github.io` (or any repo and set a custom domain).
 2. In **GitHub Settings → Pages**, select the branch (`main` or `master`) and folder (`/ (root)`).
-3. After a minute, your site will be live at `https://<your-username>.github.io/` (or your custom domain, if configured).
+3. Run `npm run build` before pushing so the HTML references the latest versioned assets.
+4. After a minute, your site will be live at `https://<your-username>.github.io/` (or your custom domain, if configured).
 
 Alternatively, you can drag-and-drop this folder into Netlify, Vercel, or any other static-host provider and follow their instructions.
 
