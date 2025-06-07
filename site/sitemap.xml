@@ -12,4 +12,32 @@
     <loc>https://clearlinesupport.com/quote.html</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://clearlinesupport.com/about.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clearlinesupport.com/services.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clearlinesupport.com/contact.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://clearlinesupport.com/low-voltage-cleanup.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clearlinesupport.com/network-cabinet-cleanup.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clearlinesupport.com/site-surveys.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://clearlinesupport.com/camera-installation.html</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
