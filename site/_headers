@@ -2,8 +2,9 @@
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-    Referrer-Policy: strict-origin-when-cross-origin
-    Permissions-Policy: geolocation=(), microphone=(), camera=()
+  X-Robots-Tag: index, follow
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
 
 /assets/css/*
   Cache-Control: max-age=31536000, immutable
