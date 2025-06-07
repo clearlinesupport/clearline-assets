@@ -66,17 +66,50 @@ Clearline Field Systems LLC provides fast, on-site IT support, PC deployments, a
 ## Folder Structure
 
 ```plaintext
-clearlinesupport-site/
-├── assets/
-│   ├── clearline_logo.svg       # Primary logo (SVG or PNG)
-│   ├── favicon.png              # Favicon image
-│   ├── apple-touch-icon.png     # Apple Touch icon
-│   └── Social.png               # Social preview image (1200×630)
-├── index.html                   # Main HTML file
-├── main.css                     # All site CSS (variables, reset, layout, components)
-├── main.js                      # JavaScript for hamburger menu & form handler
-└── README.md                    # This README file
+/ (root)
+├── README.md
+├── AGENTS.md
+├── package.json
+├── tsconfig.json
+├── .eslintrc.json
+├── .gitignore
+├── /site
+│   ├── index.html
+│   ├── about.html
+│   ├── contact.html
+│   ├── /assets
+│   │   ├── /css
+│   │   │   └── main.css
+│   │   ├── /js
+│   │   │   ├── calculator.js
+│   │   │   └── tracking.js
+│   │   └── /images
+│   │       └── logo.png
+│   ├── /partials
+│   │   ├── header.html
+│   │   └── footer.html
+│   └── /templates
+│       ├── quote-template.html
+│       └── invoice-template.html
+├── /automations
+│   ├── generate-pdf.js
+│   ├── send-sms.js
+│   └── email-notification.js
+├── /docs
+│   ├── COI.pdf
+│   ├── W9.pdf
+│   ├── EIN.pdf
+│   └── Articles-of-Organization.pdf
+└── /tests
+    ├── calculator.test.js
+    ├── pdf-generation.test.js
+    └── email-notification.test.js
 ````
+
+- **`/site`** – Static pages, assets, partials, and HTML templates.
+- **`/automations`** – Node.js scripts for PDF generation, SMS, and email tasks.
+- **`/docs`** – Official PDFs such as COI, W9, and EIN.
+- **`/tests`** – Jest unit tests covering calculator logic and automation scripts.
 
 ---
 
