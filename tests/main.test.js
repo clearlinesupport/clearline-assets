@@ -1,5 +1,5 @@
 const { JSDOM } = require('jsdom');
-const { initSite } = require('../main');
+const { initSite } = require('../site/main');
 
 describe('initSite', () => {
   let dom;
