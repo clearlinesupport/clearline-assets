@@ -53,7 +53,7 @@ Clearline Field Systems LLC provides fast, on-site IT support, PC deployments, a
   - Grid layout of service cards (Low-Voltage Cleanup, Cabinet Cleanup, Site Surveys, Camera Installation, Wi-Fi Rework, Entrance Tech Readiness, ADA Compliance, Wiring Trace & Map, Post-Tenant Sweep, Compliance Disposal).  
 
 - **Resources Section**  
-  - Links to vendor-ready documents (Certificate of Insurance, W9, EIN Assignment, NYS Business Registration & COF) and a “Call / Text” button.  
+  - Links to vendor-ready documents. The Certificate of Insurance is hosted on Next Insurance, while `docs/W9.pdf` and `docs/EIN.pdf` are included in this repo. NYS Business Registration & COF is linked externally. A “Call / Text” button is also provided.
 
 - **Contact Section**  
   - Simple name/email/phone/message form placeholder (client may replace with backend integration).  
@@ -96,10 +96,9 @@ Clearline Field Systems LLC provides fast, on-site IT support, PC deployments, a
 │   ├── send-sms.js
 │   └── email-notification.js
 ├── /docs
-│   ├── COI.pdf
 │   ├── W9.pdf
 │   ├── EIN.pdf
-│   └── Articles-of-Organization.pdf
+│   └── (COI external, Articles pending)
 └── /tests
     ├── calculator.test.js
     ├── pdf-generation.test.js
@@ -108,7 +107,7 @@ Clearline Field Systems LLC provides fast, on-site IT support, PC deployments, a
 
 - **`/site`** – Static pages, assets, partials, and HTML templates.
 - **`/automations`** – Node.js scripts for PDF generation, SMS, and email tasks.
-- **`/docs`** – Official PDFs such as COI, W9, and EIN.
+ - **`/docs`** – Vendor documents included in this repo (`W9.pdf`, `EIN.pdf`). The COI is linked externally and the Articles of Organization will be added later.
 - **`/tests`** – Jest unit tests covering calculator logic and automation scripts.
 
 ---

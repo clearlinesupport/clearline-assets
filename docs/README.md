@@ -1,3 +1,3 @@
 # Documents
 
-Placeholder directory for official PDFs (COI, W9, EIN, etc.).
+This folder stores vendor documents used on the site. Currently `W9.pdf` and `EIN.pdf` are included. The Certificate of Insurance is hosted externally and the Articles of Organization document is not yet available.
