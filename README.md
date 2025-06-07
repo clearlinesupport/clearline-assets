@@ -53,7 +53,7 @@ Clearline Field Systems LLC provides fast, on-site IT support, PC deployments, a
   - Grid layout of service cards (Low-Voltage Cleanup, Cabinet Cleanup, Site Surveys, Camera Installation, Wi-Fi Rework, Entrance Tech Readiness, ADA Compliance, Wiring Trace & Map, Post-Tenant Sweep, Compliance Disposal).  
 
 - **Resources Section**
-  - Links to vendor-ready documents. The Certificate of Insurance is hosted on Next Insurance, while `docs/W9.pdf` and `docs/EIN.pdf` are included in this repo. NYS Business Registration & COF is linked externally. A “Call / Text” button is also provided.
+  - Links to vendor-ready documents and a link to the quote calculator. See `resources.html` for a dedicated page. The Certificate of Insurance is hosted on Next Insurance, while `docs/W9.pdf` and `docs/EIN.pdf` are included in this repo. NYS Business Registration & COF is linked externally. A “Call / Text” button is also provided.
 
 - **Quote Page**
   - Dedicated page with a workstation quote calculator (`quote.html`).
@@ -224,7 +224,7 @@ This project is designed to be easy to tweak. Below are key areas you might want
   <a href="#hero-section">Home</a>
   <a href="#about-section">About</a>
   <a href="#services-section">Services</a>
-  <a href="#resources-section">Resources</a>
+  <a href="resources.html">Resources</a>
   <a href="#contact-section">Contact</a>
   <a class="call-btn" href="tel:+15185063288">Call / SMS</a>
   ```
