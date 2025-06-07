@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "type": "commonjs",
   "scripts": {
-    "test": "jest",
-    "build": "node automations/cache-bust.js"
+    "test": "jest"
   },
   "devDependencies": {
     "jest": "^29.0.0",
