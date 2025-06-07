@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
+function initSite() {
   const toggle = document.getElementById('menu-toggle');
   const nav = document.getElementById('main-nav');
 
@@ -6,14 +6,18 @@ window.addEventListener('DOMContentLoaded', () => {
     toggle.setAttribute('aria-expanded', toggle.checked);
   }
 
-  toggle.addEventListener('change', updateAria);
+  if (toggle) {
+    toggle.addEventListener('change', updateAria);
+  }
 
-  nav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      toggle.checked = false;
-      updateAria();
+  if (nav) {
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.checked = false;
+        updateAria();
+      });
     });
-  });
+  }
 
   updateAria();
 
@@ -24,4 +28,12 @@ window.addEventListener('DOMContentLoaded', () => {
       alert('Form submitted (placeholder)');
     });
   }
-});
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { initSite };
+}
+
+if (typeof window !== 'undefined') {
+  window.addEventListener('DOMContentLoaded', initSite);
+}

@@ -95,8 +95,8 @@ To view or modify this site locally, you need:
 1. **Clone or download** this repository:
 
    ```bash
-   git clone https://github.com/<your-username>/clearlinesupport-site.git
-   cd clearlinesupport-site
+   git clone https://github.com/<your-username>/clearline-assets.git
+   cd clearline-assets
    ```
 
 2. **Verify file structure**. You should see `index.html`, `main.css`, `main.js`, and an `assets/` folder containing your logo, favicon, and social image.
@@ -291,7 +291,8 @@ in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
-… (Dont be stupid) …
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
 ```
 
 ---
