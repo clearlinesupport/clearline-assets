@@ -132,7 +132,7 @@ To view or modify this site locally, you need:
    cd clearline-assets
    ```
 
-2. **Verify file structure**. You should see `index.html`, `main.css`, `main.js`, and an `assets/` folder containing your logo, favicon, and social image.
+2. **Verify file structure**. Inside the `site/` folder you should see `index.html`, `assets/css/main.css`, `assets/js/main.js`, and an `assets/` directory with images such as the logo and favicon.
 
 ### Local Development
 
@@ -145,7 +145,7 @@ You can open `index.html` directly in your browser, but for correct relative-pat
   live-server
   ```
 
-  This opens `index.html` at `http://127.0.0.1:8080` (or similar). Any edits to `index.html`, `main.css`, or `main.js` will auto-reload the page.
+  This opens `index.html` at `http://127.0.0.1:8080` (or similar). Any edits to `index.html`, `assets/css/main.css`, or `assets/js/main.js` will auto-reload the page.
 
 * **Using Python 3’s built-in server** (no installation needed if Python 3 is installed):
 
